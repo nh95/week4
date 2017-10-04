@@ -24,8 +24,7 @@ echo 'Oops';
 
 print("<br>");
 $findme = '/';
-echo 'Position of \\ character  :'. strpos($date, $findme). "<br>";
-
+echo 'Position of Slash character  :'. strpos($date, $findme). "<br>";
 echo 'Count '. str_word_count($date)."<br>";
 
 echo 'Length ' .strlen($date)."<br>";
@@ -35,6 +34,18 @@ echo 'last 2 char :' .substr($date,-2)."<br>";
 
 print_r(explode('/',$date));
 print ("<br>");
+
+
+
+foreach ($year as $val){
+
+if ((($val % 4) == 0 && ($val % 100) != 0) || (($val % 400) == 0)) {
+	echo 'True ';
+}
+else {
+echo 'False ';
+}
+}
 
 
 ?>
